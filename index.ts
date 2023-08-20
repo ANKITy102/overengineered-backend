@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 app.use(cors({
-  origin:"*", credentials : true }));
+  origin:"https://blog-frontend-3dlzoowa7-yash7426.vercel.app", credentials : true }));
 
 const PORT =  5000;
 app.get("/", (req:Request,res:Response)=>{
