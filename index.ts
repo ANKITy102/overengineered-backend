@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(cors({
   origin:"http://localhost:3000", credentials : true }));
 
-const PORT =  5000;
+const PORT =  3090;
 app.get("/", (req:Request,res:Response)=>{
   return res.send("Hi there")
 })
