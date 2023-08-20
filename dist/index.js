@@ -18,7 +18,7 @@ app.use(express_1.default.urlencoded({ extended: false }));
 app.use(cors_1.default({
     origin: "http://localhost:3000", credentials: true
 }));
-const PORT = 3090;
+const PORT = 5000;
 app.get("/", (req, res) => {
     return res.send("Hi there");
 });
