@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }))
 app.use(cors({
-  origin:"http://localhost:3000", credentials : true }));
+  origin:"*", credentials : true }));
 
 const PORT =  5000;
 app.get("/", (req:Request,res:Response)=>{
